@@ -53,5 +53,26 @@ button{
     display: block;
 }
 .btn-group{
+    justify-content: center;
     display: flex;
+}
+
+@media (max-width:500px) {
+    .grid-container {
+        display: grid;
+        margin: 5px auto;
+        grid-template-columns: repeat(9, 25px);
+        border: 1px solid rgb(158, 33, 33);
+        width: max-content;
+    }
+}
+
+@media (min-width:800px) {
+    .grid-container {
+        display: grid;
+        margin: 5px auto;
+        grid-template-columns: repeat(9, 60px);
+        border: 1px solid rgb(158, 33, 33);
+        width: max-content;
+    }
 }

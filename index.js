@@ -6,6 +6,7 @@ const verifyButton = document.querySelector(".verify_btn");
 
 let solutionGrid, unsolvedGrid;
 
+
 generateBtn.addEventListener("click", () => {
     const options = {
         method: "GET",
