@@ -68,6 +68,9 @@ button{
 }
 
 @media (min-width:800px) {
+    body{
+        text-align: center;
+    }
     .grid-container {
         display: grid;
         margin: 5px auto;
