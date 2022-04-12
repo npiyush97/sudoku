@@ -8,6 +8,7 @@ let solutionGrid, unsolvedGrid;
 
 
 generateBtn.addEventListener("click", () => {
+    const loader = document.querySelector('.loader')
     const options = {
         method: "GET",
         headers: {
@@ -16,7 +17,7 @@ generateBtn.addEventListener("click", () => {
                 "5d7d5626e4mshc16290df7688929p1eba34jsn7aa162252253",
         },
     };
-
+    loader.style.display = 'block'
     fetch(
         "https://sudoku-board.p.rapidapi.com/new-board?diff=2&stype=list&solu=true",
         options
@@ -27,6 +28,7 @@ generateBtn.addEventListener("click", () => {
                 response.response;
             unsolvedGrid = unsolvedsudoku;
             solutionGrid = solution;
+            loader.style.display = 'none'
             generateBoard(unsolvedsudoku);
         })
         .catch((err) => console.error(err));
