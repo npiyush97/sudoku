@@ -35,10 +35,13 @@ generateBtn.addEventListener("click", () => {
 });
 
 validityChecker.addEventListener("click", () => {
-    solvegrid(solutionGrid);
-    generateBtn.disabled = false;
-    validityChecker.disabled = true;
-    verifyButton.disabled = true;
+    let askingFirst = confirm("Are you sure ?");
+    if (askingFirst) {
+        solvegrid(solutionGrid);
+        generateBtn.disabled = false;
+        validityChecker.disabled = true;
+        verifyButton.disabled = true;
+    }
 });
 
 verifyButton.addEventListener("click", () => {
