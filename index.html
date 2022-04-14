@@ -1,111 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Caveat&family=Yeseva+One&display=swap"
-            rel="stylesheet"
-        />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
 
-        <link rel="stylesheet" href="index.css" />
-        <title>Suduku Solver</title>
-    </head>
-    <body>
-        <h1>Sudoku ?</h1>
-        <div class="loader"></div>
-        <div class="grid-container">
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-            <div class="grid" contenteditable="true">?</div>
-        </div>
-        <div class="suggest"></div>
-        <div class="btn-group">
-            <button class="gen_btn">Generate</button>
-            <button class="val_btn" disabled>Solve</button>
-            <button class="verify_btn" disabled>Verify</button>
-        </div>
-    </body>
-    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css" />
+    <title>Suduku Solver</title>
+  </head>
+  <body>
+    <h1>Sudoku ?</h1>
+    <div class="loader"></div>
+    <div class="grid-container">
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+      <div class="grid" contenteditable="true">?</div>
+    </div>
+    <div class="suggest"></div>
+    <div class="btn-group">
+      <button class="gen_btn">Generate</button>
+      <button class="val_btn" disabled>Solve</button>
+      <button class="verify_btn" disabled>Verify</button>
+    </div>
+  </body>
+  <script src="index.js"></script>
 </html>
