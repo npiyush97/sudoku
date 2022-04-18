@@ -1,3 +1,5 @@
+"use strict";
+
 const generateBtn = document.querySelector(".gen_btn");
 
 const validityChecker = document.querySelector(".val_btn");
@@ -57,7 +59,6 @@ verifyButton.addEventListener("click", () => {
   const suggestion = document.querySelector(".suggest");
   const grid = document.querySelectorAll(".grid");
   const board = [...grid].map((x) => x.textContent).join("");
-  console.log(board);
   fetch(
     `https://sudoku-board.p.rapidapi.com/verify-board?sudo=${board}`,
     options
